@@ -19,6 +19,7 @@ class Veiculo:
         print(f"Quantidade de rodas: {self._quantidade_rodas}")
         print(f"Capacidade do tanque: {self._capacidade_tanque} litros")
 
+
 class Carro(Veiculo):
     def __init__(self, quantidade_rodas, capacidade_tanque, numero_portas):
         super().__init__(quantidade_rodas, capacidade_tanque)
@@ -33,6 +34,7 @@ class Carro(Veiculo):
     def dirigir(self):
         print("Dirigindo o carro...")
 
+
 class Bicicleta(Veiculo):
     def __init__(self, quantidade_rodas, capacidade_tanque, tipo_terreno):
         super().__init__(quantidade_rodas, capacidade_tanque)
@@ -46,6 +48,7 @@ class Bicicleta(Veiculo):
 
     def pedalar(self):
         print("Pedalando a bicicleta...")
+
 
 carro = Carro(4, 60, 4)
 print(f"Carro:{carro.get_numero_portas()} portas")
